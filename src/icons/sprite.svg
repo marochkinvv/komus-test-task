@@ -1,0 +1,14 @@
+  <svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="furniture-icon" viewBox="0 0 16 16" fill="currentColor">
+      <path fill-rule="evenodd" d="M2 3.5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a.5.5 0 0 1-1 0v-1H3v5h2a.5.5 0 0 1 0 1H3a1 1 0 0 1-1-1v-5Z" clip-rule="evenodd" />
+      <path fill-rule="evenodd" d="M12.77 6.5H7.23a.23.23 0 0 0-.23.23v5.54c0 .127.103.23.23.23h5.54a.23.23 0 0 0 .23-.23V6.73a.23.23 0 0 0-.23-.23Zm-5.54-1h5.54c.679 0 1.23.551 1.23 1.23v5.54c0 .679-.551 1.23-1.23 1.23H7.23A1.23 1.23 0 0 1 6 12.27V6.73c0-.679.551-1.23 1.23-1.23Z" clip-rule="evenodd" />
+    </symbol>
+
+    <symbol id="control-prev-icon" viewbox="0 0 24 24" fill="currentColor">
+      <path fill-rule="evenodd" d="M16.29 3.22a.758.758 0 0 1 0 1.06L9.2 11.47a.758.758 0 0 0 0 1.06l7.088 7.19a.757.757 0 0 1 0 1.06.732.732 0 0 1-1.045 0l-7.088-7.189a2.273 2.273 0 0 1 0-3.182l7.088-7.19a.732.732 0 0 1 1.045 0Z" clip-rule="evenodd" />
+    </symbol>
+
+    <symbol id="control-next-icon" viewbox="0 0 24 24" fill="currentColor">
+      <path fill-rule="evenodd" d="M7.722 3.22a.758.758 0 0 0 0 1.06l7.088 7.19a.757.757 0 0 1 0 1.06l-7.088 7.19a.758.758 0 0 0 0 1.06.732.732 0 0 0 1.046 0l7.088-7.189a2.273 2.273 0 0 0 0-3.182l-7.088-7.19a.732.732 0 0 0-1.046 0Z" clip-rule="evenodd" />
+    </symbol>
+  </svg>

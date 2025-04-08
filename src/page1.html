@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/tabs.css">
+  <link rel="stylesheet" href="./styles/komus-link-list.css">
+  <link rel="stylesheet" href="./styles/banner-carousel.css">
+  <link rel="stylesheet" href="./styles/timer.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+  <main>
+
+    <h1 class="main-title">Тестовое задание</h1>
+    <div class="tabs">
+      <ul class="tabs__list">
+        <li id="tab1" class="tabs__item tabs__item--active">Таб 1</li>
+        <li id="tab2" class="tabs__item">Таб 2</li>
+      </ul>
+    </div>
+    <div id="list-wrapper" class="content">
+      <ul class="komus-links__list">
+
+      </ul>
+    </div>
+    <div id="carousel-wrapper" class="content">
+      <div class="carousel">
+        <div class="furniture-banner banner">
+          <p class="furniture-banner__heading">Сборка включена в стоимость</p>
+          <p class="furniture-banner__description">
+            <span class="furniture-banner__text">Соберите сами и получите скидку 10%: выберите «Нет» и укажите</span>
+            <span class="furniture-banner__promocode">
+              <svg class="furniture-banner__promocode-icon">
+                <use xlink:href="./icons/sprite.svg#furniture-icon"></use>
+              </svg>
+              <span class="furniture-banner__promocode-text">СОБЕРУСАМ</span>
+            </span>
+            <span class="furniture-banner__text">в поле комментария на следующем шаге оформления</span>
+          </p>
+        </div>
+        <div class="shock-price-banner banner">
+          <a class="banner-link" href="/src/page2.html">
+            <div class="shock-price-banner__wrapper">
+              <div class="shock-price-banner__heading">
+                <p class="shock-price-banner__title">Цена недели</p>
+                <p class="shock-price-banner__text">успей купить выгодно</p>
+              </div>
+              <div class="timer">
+                <p class="timer__title">До окончания акции</p>
+                <div class="timer-digits">
+                  <div class="timer-digits__days timer-digits-data">
+                    <span>00</span><span>дней</span>
+                  </div>
+                  <div class="timer-digits__hours timer-digits-data"><span>00</span><span>часов</span></div>
+                  <div class="timer__digits__minutes timer-digits-data"><span>00</span><span>минут</span></div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="controls">
+        <div class="control control--prev">
+          <svg class="control__icon">
+            <use xlink:href="./icons/sprite.svg#control-prev-icon"></use>
+          </svg>
+        </div>
+        <div class="control control--next">
+          <svg class="control__icon">
+            <use xlink:href="./icons/sprite.svg#control-next-icon"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <template id="tab-content-item-template">
+    <li class="tab-content__item">
+      <a class="tab-content__link" target="_blank" href=""></a>
+    </li>
+  </template>
+
+  <script src="./linksData.js"></script>
+  <script src="./main.js"></script>
+
+</body>
+
+</html>

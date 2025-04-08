@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/tabs.css">
+  <link rel="stylesheet" href="./styles/komus-link-list.css">
+  <link rel="stylesheet" href="./styles/banner-carousel.css">
+  <link rel="stylesheet" href="./styles/timer.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <main>
+    <h1 id="result" class="main-title" style="margin-bottom: 32px; text-align: center;">Пока тут шаром покати</h1>
+    <img id="image" style="margin: 0 auto;" src="./img/happy-cat.jpg" alt="Двольный кот">
+    <a id="link" style="text-align: center; display: block; margin: 24px;" href="/src/page1.html">К основной странице</a>
+  </main>
+
+  <script>
+    const heading = document.querySelector('#result');
+    const image = document.querySelector('#image');
+
+    const mutationObserver = new MutationObserver((mutations) => {
+      if (heading && image) {
+        if (window.localStorage.getItem('promo') === '1') {
+          heading.textContent = 'Вот это я понимаю, даже кот доволен';
+          image.style.display = 'block';
+        } else {
+          heading.textContent = 'Пока тут шаром покати';
+          image.style.display = 'none';
+        }
+      }
+    })
+
+    mutationObserver.observe(document.body, {
+      attributes: true,
+      characterData: true,
+      childList: true,
+      subtree: true,
+      attributeOldValue: true,
+      characterDataOldValue: true
+    })
+
+  </script>
+
+</body>
+
+</html>

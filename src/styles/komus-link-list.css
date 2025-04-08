@@ -1,0 +1,55 @@
+.komus-links__list {
+  max-height: 100px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.komus-links__list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.komus-links__list::-webkit-scrollbar-button {
+  display: none;
+}
+
+.komus-links__list::-webkit-scrollbar-thumb {
+  width: 4px;
+  height: 60px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.komus-links__list::-webkit-scrollbar-track {
+  width: 4px;
+  height: 306px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.komus-links__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 16px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  line-height: 129%;
+  color: #363a47;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.komus-links__item:hover {
+  background-color: #e6f7ff;
+  color: #3da3e2;
+}
+
+.komus-links__link {
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+  display: block;
+  width: 100%;
+  padding: 8px 24px;
+}

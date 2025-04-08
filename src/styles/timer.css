@@ -1,0 +1,66 @@
+.timer {
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.timer__title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: #da1f2a;
+}
+
+.timer-digits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: #da1f2a;
+}
+
+.timer-digits-data {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.timer-digits-data span:first-child {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: #da1f2a;
+  width: 24px;
+  height: 21px;
+}
+
+.timer-digits-data span:last-child {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 100%;
+  text-align: center;
+  color: #da1f2a;
+}
+
+.timer-digits__hours.timer-digits-data span:first-child::before {
+  content: ':';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  transform: translateX(-100%);
+}
+
+.timer-digits__hours.timer-digits-data span:first-child::after {
+  content: ':';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  transform: translateX(100%);
+}
