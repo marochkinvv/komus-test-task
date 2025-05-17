@@ -1,3 +1,5 @@
+// Данные для ссылок в первом табе
+
 const linksData = [
   {
     link: 'https://www.komus.ru',
